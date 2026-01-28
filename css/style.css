@@ -21,6 +21,10 @@ p {
   padding: 0 20px;
 }
 
+.background-color-green {
+  background-color: green;
+}
+
 .result {
   padding: 60px 20px 20px;
 }

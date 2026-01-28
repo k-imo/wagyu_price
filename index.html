@@ -18,7 +18,7 @@
       <li class="nav-item d-none d-sm-block">
         <a class="nav-link" href="#">新規登録</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item background-color-green">
         <a class="nav-link" href="#">ログイン</a>
       </li>
       <li class="nav-item d-none d-sm-block">
@@ -243,21 +243,6 @@
   <script src="js/main.js"></script>
 </body>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
-<script>
-  $(function () {
-    $('#page-top a').click(function (e) {
-      e.preventDefault();
-      var position = 0;
-      var speed = 500;
-      $('html, body').animate({
-        scrollTop: position,
-      }, speed, 'swing');
-      return false;
-    });
-  });
-</script>
 
 </html>
