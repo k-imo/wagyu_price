@@ -105,7 +105,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-          </div>
+    </div>
     <div class="card-deck row">
       <a href="#" class="card">
         <img class="card-img-top" src="img/ph_beaf.jpg">
@@ -145,7 +145,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-            <a href="#" class="card">
+      <a href="#" class="card">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">和牛</h5>
@@ -164,7 +164,7 @@
           <small class="text-muted">この和牛の詳細を見る</small>
         </div>
       </a>
-            <a href="#" class="card">
+      <a href="#" class="card">
         <img class="card-img-top" src="img/ph_beaf.jpg">
         <div class="card-body">
           <h5 class="card-title">和牛</h5>
@@ -184,7 +184,13 @@
         </div>
       </a>
     </div>
+    <div id="page-top">
+      <a href="">TOP</a>
+    </div>
   </main>
+
+
+
   <footer class="content-width">
     <a href="#">プライバシーポリシー</a>
     <p>&copy; 20XX -How Much 和牛 -</p>
@@ -236,5 +242,22 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+  $(function () {
+    $('#page-top a').click(function (e) {
+      e.preventDefault();
+      var position = 0;
+      var speed = 500;
+      $('html, body').animate({
+        scrollTop: position,
+      }, speed, 'swing');
+      return false;
+    });
+  });
+</script>
 
 </html>
